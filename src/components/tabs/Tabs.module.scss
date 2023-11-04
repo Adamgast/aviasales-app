@@ -1,0 +1,30 @@
+.tabs {
+	display: flex;
+	min-height: 50px;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #dfe5ec;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.tabs-button {
+	flex: 0 0 33.333%;
+	color: #4a4a4a;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.66;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	&:not(:last-child) {
+		border-right: 1px solid #dfe5ec;
+	}
+	@media (max-width: 467.98px) {
+		font-size: 10px;
+	}
+}
+
+.active {
+	background-color: #2196f3;
+	color: #fff;
+}
