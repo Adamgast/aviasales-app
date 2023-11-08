@@ -1,0 +1,13 @@
+export const TAB_CHEAPEST = 'TAB_CHEAPEST';
+export const TAB_FAST = 'TAB_FAST';
+export const TAB_OPTIMAL = 'TAB_OPTIMAL';
+
+export const FILTER = 'FILTER';
+
+export const FETCH_TICKETS_FINISH = 'FETCH_TICKETS_FINISH';
+export const FETCH_TICKETS_SUCCESS = 'FETCH_TICKETS_SUCCESS';
+export const FETCH_TICKETS_ERROR = 'FETCH_TICKETS_ERROR';
+export const SHOW_MORE = 'SHOW_MORE';
+
+export const LOADING_ON = 'LOADING_ON';
+export const LOADING_OFF = 'LOADING_OFF';

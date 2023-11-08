@@ -1,11 +1,8 @@
 import ReactDOM from 'react-dom/client';
-import { legacy_createStore as createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import { reducer } from './redux/reducers/reducer';
+import { store } from './redux/store';
 import { App } from './components/app/App';
-
-const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

@@ -64,6 +64,7 @@
 		opacity: 0;
 		&:checked + span::before {
 			background-image: url("./check.svg");
+			border: 1px solid #adb5bd;
 			border: 0px;
 		}
 	}

@@ -1,12 +1,12 @@
-import { TAB_CHEAPEST, TAB_FAST, TAB_OPTIMAL } from '../actions/action-constants';
-import { TypeTab, TypeAction } from '../../types/types';
+import { TAB_CHEAPEST, TAB_FAST, TAB_OPTIMAL } from '../actions/action-type';
+import { TypeTab, TypeTabAction } from '../../types/types';
 
 const initialStateTab: TypeTab = {
   tab: TAB_CHEAPEST,
 };
 //	добавь state если не работает
 // eslint-disable-next-line @typescript-eslint/default-param-last
-export const reducerTabs = (state: TypeTab = initialStateTab, action: TypeAction) => {
+export const reducerTabs = (state: TypeTab = initialStateTab, action: TypeTabAction) => {
   switch (action.type) {
     case TAB_CHEAPEST:
       return { tab: TAB_CHEAPEST };

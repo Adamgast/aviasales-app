@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 
+import { toggleFilter } from '../../redux/actions/action-creators';
 import { TypeFilter, TypeState } from '../../types/types';
 
 import classes from './Filter.module.scss';
@@ -15,7 +16,7 @@ export const Filter = () => {
         {filter.map((item: TypeFilter) => (
           <label key={item.name} className={classes['filter-label']} htmlFor={item.name}>
             <input
-              onChange={() => dispatch({ type: 'filter', payload: item.name })}
+              onChange={() => dispatch(toggleFilter(item.name))}
               className={classes['filter-checkbox']}
               type="checkbox"
               checked={item.checked}

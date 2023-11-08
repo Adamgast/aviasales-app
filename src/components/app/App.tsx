@@ -14,9 +14,6 @@ export const App = () => (
       <section className={classes.content}>
         <Tabs />
         <TicketsList />
-        <button className={classes['show-more']} type="button">
-          Показать еще 5 билетов!
-        </button>
       </section>
     </main>
   </div>

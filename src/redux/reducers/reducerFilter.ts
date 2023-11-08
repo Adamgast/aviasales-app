@@ -1,5 +1,5 @@
-import { FILTER } from '../actions/action-constants';
-import { TypeFilter, TypeAction } from '../../types/types';
+import { FILTER } from '../actions/action-type';
+import { TypeFilter, TypeFilterAction } from '../../types/types';
 
 const initialStateFilter: TypeFilter[] = [
   { label: 'Все', name: 'all', checked: false },
@@ -10,7 +10,7 @@ const initialStateFilter: TypeFilter[] = [
 ];
 
 // eslint-disable-next-line @typescript-eslint/default-param-last
-export const reducerFilter = (state: TypeFilter[] = initialStateFilter, action: TypeAction) => {
+export const reducerFilter = (state: TypeFilter[] = initialStateFilter, action: TypeFilterAction) => {
   switch (action.type) {
     case FILTER: {
       const newState: TypeFilter[] = [...state];

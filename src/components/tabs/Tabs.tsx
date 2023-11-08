@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 
 import { TypeState } from '../../types/types';
-import { TAB_CHEAPEST, TAB_FAST, TAB_OPTIMAL } from '../../redux/actions/action-constants';
-import { getTabCheapest, getTabFast, getTabOptimal } from '../../redux/actions/action-creators';
+import { TAB_CHEAPEST, TAB_FAST, TAB_OPTIMAL } from '../../redux/actions/action-type';
+import { tabCheapest, tabFast, tabOptimal } from '../../redux/actions/action-creators';
 
 import classes from './Tabs.module.scss';
 
@@ -14,21 +14,21 @@ export const Tabs = () => {
   return (
     <nav className={classes.tabs}>
       <button
-        onClick={() => dispatch(getTabCheapest())}
+        onClick={() => dispatch(tabCheapest())}
         className={classNames(classes['tabs-button'], activeTab === TAB_CHEAPEST && classes.active)}
         type="button"
       >
         Самый дешевый
       </button>
       <button
-        onClick={() => dispatch(getTabFast())}
+        onClick={() => dispatch(tabFast())}
         className={classNames(classes['tabs-button'], activeTab === TAB_FAST && classes.active)}
         type="button"
       >
         Самый быстрый
       </button>
       <button
-        onClick={() => dispatch(getTabOptimal())}
+        onClick={() => dispatch(tabOptimal())}
         className={classNames(classes['tabs-button'], activeTab === TAB_OPTIMAL && classes.active)}
         type="button"
       >
