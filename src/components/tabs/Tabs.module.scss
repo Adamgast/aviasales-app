@@ -16,11 +16,18 @@
 	line-height: 1.66;
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
 	&:not(:last-child) {
 		border-right: 1px solid #dfe5ec;
 	}
 	@media (max-width: 467.98px) {
 		font-size: 10px;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #2196f3;
+			color: #fff;
+		}
 	}
 }
 
